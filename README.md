@@ -6,14 +6,14 @@ inspired by http://kv.codeplex.com/
 
 ```powershell
 kv name "John Doe" # saves the the value, 'John Doe' under the key, 'name'
-kv name            # retrieve the value 'fred smith' straight to your clipboard.
+kv name            # retrieve the value 'John Doe' straight to your clipboard.
 ```
 
 ```powershell
 kv #lists all keys
 ```
 ```powershell
-kv -r name # will remove the key ‘name’ (and its value) from your store
+kv -r name # will remove the key 'name' and its value from the store
 ```
 
 #You can also pipe data

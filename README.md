@@ -19,9 +19,17 @@ kv -r name # will remove the key ‘name’ (and its value) from your store
 #You can also pipe a value in, e.g.
 
 ```powershell
-'Hello Jim' | kv Greeting  # will store 'Hello Fred' under the key 'Greeting'
+'Hello John' | kv Greeting  # will store 'Hello John' under the key 'Greeting'
 ```
 
 ```powershell
 gc .\kv.ps1 | kv TheFile # will store the content of 'kv.ps1' under the key 'TheFile'
+```
+
+#Where's the data?
+
+The key values are stored in in the folder $env:LOCALAPPDATA\kv\kvps.snippet using the Export-CliXml
+
+```powershell
+$hastable | Export-CliXml $env:LOCALAPPDATA\kv\kvps.snippet
 ```

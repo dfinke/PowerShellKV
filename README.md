@@ -16,7 +16,7 @@ kv #lists all keys
 kv -r name # will remove the key ‘name’ (and its value) from your store
 ```
 
-#You can also pipe a value in, e.g.
+#You can also pipe data
 
 ```powershell
 'Hello John' | kv Greeting  # will store 'Hello John' under the key 'Greeting'

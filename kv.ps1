@@ -64,18 +64,3 @@ function kv {
         }
     }
 }
-
-cls
-#kv dev MaxServer0412_Tangerine1
-#kv dev
-
-#'MaxServer0412_Tangerine1' | kv dev
-#kv dev MaxServer0412_Tangerine2
-#kv dev
-
-#function ql {$args}
-
-#ql a b c | kv test
-#kv test
-#kv -Remove test
-#kv test
